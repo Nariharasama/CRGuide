@@ -1,0 +1,20 @@
+<div class="container">
+    <text class="title">
+        Home
+    </text>
+    <text class="title">
+        {{startStation}}-{{endStation}}
+    </text>
+    <div class="BottomNavs">
+        <div class="NavButton"  onclick="ToHome">
+            <image class="img" src="/common/images/railway_alert.svg" onclick="ToHome"/>
+        </div>
+        <div class="NavButton" onclick="ToInfo">
+            <image class="img" src="/common/images/info.svg" onclick="ToInfo"/>
+        </div>
+        <div class="NavButton" onclick="ToSetting">
+            <image class="img" src="/common/images/route.svg" onclick="ToSetting"/>
+        </div>
+    </div>
+
+</div>
