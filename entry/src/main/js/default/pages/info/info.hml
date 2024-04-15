@@ -1,20 +1,35 @@
-<div class="container">
-    <text class="title">
-       Info
-    </text>
-    <text class="title">
-        Introduction About railway lines and service
-    </text>
-    <div class="BottomNavs">
-        <div class="NavButton"  onclick="ToHome">
-            <image class="img" src="/common/images/railway_alert.svg" onclick="ToHome"/>
+<div class="index">
+    <div class="background-main">
+        <text class="app-title">CRGuide时刻表</text>
+    </div>
+    <div class="main-container">
+        <text class="page-title">教程和提示</text>
+        <div class="info-area">
+            <div class="info-card">
+                <text class="card-title">如何使用本软件（服务卡片）</text>
+                <text class="card-content">1.在列车情报页面输入出发车站和到达车站，点击添加服务卡片会添加一个当前车站设置的服务卡片。若是需要换乘，可以多次添加，将每一次行程单独添加为一个服务卡片。右侧转换按钮可以切换始发终到站。</text>
+                <text class="card-content">2.列查信息中左侧的图形表示列车剩余的座位数，绿色圆圈表示座位有大量空余，橙色三角表示座位紧张，红色叉表示暂无余座。该座位数只会统计设置中座席等级的座位数，例如在设置中设置为二等座，则只统计二等座的数量请根据您所购买的定期/定次票的种类在设置中进行设定。</text>
+               <text class="card-content">3.由于目前国铁定次/定期票仅支持高速铁路列车，故列车信息中仅显示列车种别为G/C，D和S的列车。 右边的倒计时显示的是目前距发车的剩余时间，请在合理估计进展检票时间后选择预乘坐的列车。</text>
+            </div>
+            <div class="info-card">
+                <text class="card-title">关于国铁列车</text>
+                <text class="card-content">1.关于不同列车种别：G字头列车通常为长途快速列车运行速度在300km/h以上，由于国铁会优先售卖长途票，故该种别列车座席会较为紧张；C字头列车为短途城际列车，停站多，速度在200km/h左右，由于该种别列车车次多且仅服务小范围都市圈，故座席较为宽松；D字头列车为低速长途高速铁路，速度和停车站与C字头列车相似，但行程较长故也易于出现座席紧张的问题；S字头列车为国铁在部分城市圈设置的通勤专用列车，这些列车有固定的停车站和时间，不售卖普通车票也不在时刻表内显示。乘坐这些列车请至查询当地时间表。</text>
+                <text class="card-content">2.关于定期/定次票：12306提供定期/定次票的购买服务，购买后有效期内乘坐满足条件的列车无需购票，直接身份证或其他有效证件进检票口后系统会自动分配剩余的座位并将座位号发至提前登记的手机号。</text>
+            </div>
         </div>
-        <div class="NavButton" onclick="ToInfo">
-            <image class="img" src="/common/images/info.svg" onclick="ToInfo"/>
-        </div>
-        <div class="NavButton" onclick="ToSetting">
-            <image class="img" src="/common/images/route.svg" onclick="ToSetting"/>
+        <div class="NavBottons">
+            <div class="NavBotton">
+                <image src="/common/images/tram.svg" class="buttonimage" onclick="ToHome"/>
+                <text class="buttontext">列车情报</text>
+            </div>
+            <div class="NavBotton">
+                <image src="/common/images/info-on.svg" class="buttonimage" onclick="ToInfo"/>
+                <text class="buttontext-on">相关信息</text>
+            </div>
+            <div class="NavBotton">
+                <image src="/common/images/settings.svg" class="buttonimage" onclick="ToSetting"/>
+                <text class="buttontext">设置</text>
+            </div>
         </div>
     </div>
-
 </div>

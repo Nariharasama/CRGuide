@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@material/web": "^1.4.0",
     "prettier": "^3.2.5"
   }
 }

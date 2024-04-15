@@ -1,20 +1,44 @@
-<div class="container">
-    <text class="title">
-        Home
-    </text>
-    <text class="title">
-        {{startStation}}-{{endStation}}
-    </text>
-    <div class="BottomNavs">
-        <div class="NavButton"  onclick="ToHome">
-            <image class="img" src="/common/images/railway_alert.svg" onclick="ToHome"/>
-        </div>
-        <div class="NavButton" onclick="ToInfo">
-            <image class="img" src="/common/images/info.svg" onclick="ToInfo"/>
-        </div>
-        <div class="NavButton" onclick="ToSetting">
-            <image class="img" src="/common/images/route.svg" onclick="ToSetting"/>
-        </div>
+<div class="index">
+    <div class="background-main">
+        <text class="app-title">CRGuide时刻表</text>
     </div>
-
+    <div class="main-container">
+        <text class="page-title"> 车站设置 </text>
+        <div class="search-area">
+            <div class="station-area">
+                <div class="start-align">
+                    <text class="start-title"> 始发站 </text>
+                </div>
+                <input type="text" id="start" placeholder="设置车站" class="start-setting"></input>
+                <div class="station-divider"></div>
+                <div class="start-align">
+                    <text class="start-title">终到站</text>
+                </div>
+                <input type="text" id="end" placeholder="设置车站" class="start-setting"></input>
+            </div>
+            <div class="icon-area">
+                <image src="/common/images/swap_vert.svg" class="swapicon"/>
+            </div>
+        </div>
+        <button class="cardbutton" >添加服务卡片</button>
+        <div class="divide-line"></div>
+        <div class="page-title2"> 发车信息 </div>
+        <div class="train-infos">
+            <text class="page-title"> 已有服务卡片 </text>
+        </div>
+        <div class="NavBottons">
+            <div class="NavBotton">
+                <image src="/common/images/tram-on.svg" class="buttonimage" onclick="ToHome"/>
+                <text class="buttontext-on">列车情报</text>
+            </div>
+            <div class="NavBotton">
+                <image src="/common/images/info.svg" class="buttonimage" onclick="ToInfo"/>
+                <text class="buttontext">相关信息</text>
+            </div>
+            <div class="NavBotton">
+                <image src="/common/images/settings.svg" class="buttonimage" onclick="ToSetting"/>
+                <text class="buttontext">设置</text>
+            </div>
+       </div>
+    </div>
 </div>

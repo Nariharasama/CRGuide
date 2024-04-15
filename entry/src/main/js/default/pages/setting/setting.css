@@ -1,27 +1,106 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 0px;
-    top: 0px;
-    width: 100%;
+.index{
     height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #4E5B92;
+    flex-direction: column;
 }
 
-.title {
-    font-size: 38px;
-    text-align: center;
+.background-main{
+    background-color: #4E5B92;
+    height: 80px;
     width: 100%;
-    margin: 10px;
+    flex-grow: 0;
+    display: flex;
 }
-.BottomNavs{
+
+.main-container{
+    background-color: #EFEDF4;
+    display: flex;
+    flex-grow: 1;
+    border-radius: 0px 0px 24px 24px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.app-title{
+    color: #ffffff;
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    left: 16px;
+    top: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title{
+    color: #000000;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 20px ;
+    display: flex;
+}
+
+
+.setting-area{
+    flex-grow: 1;
     display: flex;
     width: 100%;
-
+    padding-left: 16px;
 }
-.NavButton{
-    width: 128px;
-    height: 64px;
 
+.choose{
+    font-family: sans-serif;
+    color: #4E5B92;
+    margin-top: 16px;
+}
+
+.NavBottons{
+    height: 48px;
+    width: 100%;
+    flex-grow: 0;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.NavBotton{
+    height: 100%;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonimage{
+    width: 24px;
+    height: 24px;
+}
+
+.buttontext-on{
+    color: #535a92;
+    text-align: left;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.buttontext{
+    color: #5a5d72;
+    text-align: left;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
 }

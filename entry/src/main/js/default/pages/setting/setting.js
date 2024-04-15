@@ -1,28 +1,31 @@
 import router from '@system.router';
 
-//start Station起始车站    endStation结束车站
 export default {
     data: {
-        startStation:"Not_Set",
-        endStation:"Not_Set"
-    },
+        toggle_list: [
+            {
+                "id": "1", "name": "一等座", "checked": true
+            },
+            {
+                "id": "2", "name": "二等座", "checked": false
+            },
 
-    onInit() {
+        ],
+        idx: ""
     },
-
-    ToHome(){
-        router.push({
-            uri: "pages/index/index"
-        })
+    allclick(arg) {
+        this.idx = arg;
     },
-    ToInfo(){
-        router.push({
-            uri: "pages/info/info"
-        })
-    },
-    ToSetting(){
-        router.push({
-            uri: "pages/setting/setting"
-        })
+    allchange(e) {
+        if (e.checked != true) {
+            return;
+        }
+        for (var i = 0; i < this.toggle_list.length; i++) {
+            if (this.toggle_list[i].id === this.idx) {
+                this.toggle_list[i].checked = true;
+            } else {
+                this.toggle_list[i].checked = false;
+            }
+        }
     }
 }

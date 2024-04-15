@@ -1,20 +1,27 @@
-<div class="container">
-    <text class="title">
-        Settings
-    </text>
-    <text class="title">
-        {{startStation}}-{{endStation}}
-    </text>
-    <div class="BottomNavs">
-        <div class="NavButton"  onclick="ToHome">
-            <image class="img" src="/common/images/railway_alert.svg" onclick="ToHome"/>
+<div class="index">
+    <div class="background-main">
+        <text class="app-title">CRGuide时刻表</text>
+    </div>
+    <div class="main-container">
+        <text class="page-title"> 软件设置 </text>
+        <div class="setting-area">
+            <toggle class="choose" for="{{toggle_list}}" id="{{$item.id}}" checked="{{$item.checked}}"
+                    value="{{$item.name}}" @change="allchange" @click="allclick({{$item.id}})"></toggle>
         </div>
-        <div class="NavButton" onclick="ToInfo">
-            <image class="img" src="/common/images/info.svg" onclick="ToInfo"/>
-        </div>
-        <div class="NavButton" onclick="ToSetting">
-            <image class="img" src="/common/images/route.svg" onclick="ToSetting"/>
+
+        <div class="NavBottons">
+            <div class="NavBotton">
+                <image src="/common/images/tram.svg" class="buttonimage" onclick="ToHome"/>
+                <text class="buttontext">列车情报</text>
+            </div>
+            <div class="NavBotton">
+                <image src="/common/images/info.svg" class="buttonimage" onclick="ToInfo"/>
+                <text class="buttontext">相关信息</text>
+            </div>
+            <div class="NavBotton">
+                <image src="/common/images/settings-on.svg" class="buttonimage" onclick="ToSetting"/>
+                <text class="buttontext-on">设置</text>
+            </div>
         </div>
     </div>
-
 </div>
