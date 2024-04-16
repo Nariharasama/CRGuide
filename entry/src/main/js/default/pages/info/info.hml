@@ -3,7 +3,9 @@
         <text class="app-title">CRGuide时刻表</text>
     </div>
     <div class="main-container">
-        <text class="page-title">教程和提示</text>
+        <div class="title-area">
+            <text class="page-title">教程和提示</text>
+        </div>
         <div class="info-area">
             <div class="info-card">
                 <text class="card-title">如何使用本软件（服务卡片）</text>
