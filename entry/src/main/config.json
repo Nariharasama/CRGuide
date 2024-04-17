@@ -36,12 +36,12 @@
         "type": "page",
         "forms": [
           {
-            "jsComponentName": "widget",
+            "jsComponentName": "Card2X2",
             "isDefault": true,
             "scheduledUpdateTime": "10:30",
             "defaultDimension": "2*2",
-            "name": "widget",
-            "description": "This is a service widget.",
+            "name": "CardS",
+            "description": "A Timetable for CR trains.",
             "colorMode": "auto",
             "type": "JS",
             "supportDimensions": [
@@ -49,14 +49,29 @@
             ],
             "updateEnabled": true,
             "updateDuration": 1
+          },
+          {
+            "jsComponentName": "Card2X4",
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*4",
+            "name": "CardM",
+            "description": "A Timetable for CR trains.",
+            "colorMode": "auto",
+            "type": "JS",
+            "supportDimensions": [
+              "2*4"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
           }
         ],
-        "launchType": "standard"
+        "launchType": "singleton"
       }
     ],
     "distro": {
       "moduleType": "entry",
-      "installationFree": true,
+      "installationFree": false,
       "deliveryWithInstall": true,
       "moduleName": "entry"
     },
@@ -79,10 +94,22 @@
         "pages": [
           "pages/index/index"
         ],
-        "name": "widget",
+        "name": "Card2X2",
         "window": {
           "designWidth": 720,
           "autoDesignWidth": true
+        },
+        "type": "form"
+      },
+
+      {
+        "name": "Card2X4",
+        "pages": [
+          "pages/index/index"
+        ],
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
         },
         "type": "form"
       }

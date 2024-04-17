@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+.top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-left{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.half-left{
+    width: 100%;
+    height: 40%;
+}
+
+.station{
+    text-color: #000000;
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    width: 30%;
+}
+
+
+.station1{
+    color: #4e5b92;
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    width: 50%;
+}
+
+.seatsindicator-a{
+    background-color: #2e7d32;
+    width: 4px;
+    height: 60px;
+    flex-grow: 0;
+}
+
+.seatsindicator-b{
+    background-color: #ef6c00;
+    width: 4px;
+    height: 60px;
+    flex-grow: 0;
+}
+
+.seatsindicator-c{
+    background-color: #d32f2f;
+    width: 4px;
+    height: 60px;
+    flex-grow: 0;
+}
+
+.down-right{
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    padding-left: 8px;
+}
+
+.half-right{
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+    display: flex;
+}
+
+.time{
+    color: #000000;
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.train{
+    color: #535a92;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 100%;
+}
+
+.timeleft{
+    text-color: #000000;
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 8px;
+    width:100%;
+
+}
+

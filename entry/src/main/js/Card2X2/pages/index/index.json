@@ -2,7 +2,14 @@
   "data": {
     "title": "Title",
     "detail": "Text",
-    "iconTitle": "Picture"
+    "iconTitle": "Picture",
+    "dim2X4": "false",
+    "StartStation": "start",
+    "EndStation": "end",
+    "startTime": "10:42",
+    "train": "G6511",
+    "timeLeft": "00:12:09"
+
   },
   "actions": {
     "routerEvent": {

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="top">
+        <div class="top-left">
+            <div class="half-left">
+                <text class="station">始发</text><text class="station1">{{StartStation}}</text>
+            </div>
+            <div class="half-left">
+                <text class="station">终到</text><text class="station1">{{EndStation}}</text>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="seatsindicator-a"></div>
+        <div class="down-right">
+            <div class="half-right">
+                <text class="time">{{startTime}}发</text>
+                <text class="train">{{train}}</text>
+            </div>
+            <text class="timeleft">{{timeLeft}}</text>
+        </div>
+    </div>
+</div>
