@@ -1,0 +1,157 @@
+{
+  "template": {
+    "attr": {},
+    "type": "div",
+    "classList": [
+      "container"
+    ],
+    "children": [
+      {
+        "attr": {},
+        "type": "stack",
+        "children": [
+          {
+            "attr": {},
+            "type": "div",
+            "classList": [
+              "container-img"
+            ],
+            "children": [
+              {
+                "attr": {
+                  "src": "/common/ic_default_image@3x.png"
+                },
+                "type": "image",
+                "classList": [
+                  "bg-img"
+                ],
+                "events": {
+                  "click": "routerEvent"
+                }
+              }
+            ]
+          },
+          {
+            "attr": {},
+            "type": "div",
+            "classList": [
+              "container-inner"
+            ],
+            "children": [
+              {
+                "attr": {
+                  "value": "{{$t('strings.title')}}"
+                },
+                "type": "text",
+                "classList": [
+                  "title"
+                ]
+              },
+              {
+                "attr": {
+                  "value": "{{$t('strings.detail')}}"
+                },
+                "type": "text",
+                "classList": [
+                  "detail_text"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "styles": {
+    ".container": {
+      "flexDirection": "column",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    ".bg-img": {
+      "flexShrink": 0,
+      "height": "100%"
+    },
+    ".container-inner": {
+      "flexDirection": "column",
+      "justifyContent": "flex-end",
+      "alignItems": "flex-start",
+      "height": "100%",
+      "width": "100%",
+      "paddingTop": "12px",
+      "paddingRight": "12px",
+      "paddingBottom": "12px",
+      "paddingLeft": "12px"
+    },
+    ".title": {
+      "fontSize": "19px",
+      "fontWeight": "bold",
+      "color": "#FFFFFF",
+      "textOverflow": "ellipsis",
+      "maxLines": 1
+    },
+    ".detail_text": {
+      "fontSize": "16px",
+      "color": "#FFFFFF",
+      "opacity": 0.66,
+      "textOverflow": "ellipsis",
+      "maxLines": 1,
+      "marginTop": "6px"
+    },
+    "@MEDIA": [
+      {
+        "condition": "(device-type: tablet)",
+        ".bg-img": {
+          "objectFit": "fill"
+        }
+      },
+      {
+        "condition": "(device-type: wearable)",
+        ".container-inner": {
+          "justifyContent": "center",
+          "alignItems": "center",
+          "marginTop": "40px",
+          "marginRight": "26px",
+          "marginBottom": "40px",
+          "marginLeft": "26px",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px"
+        },
+        ".title": {
+          "textAlign": "center"
+        },
+        ".detail_text": {
+          "maxLines": 2,
+          "textAlign": "center"
+        }
+      },
+      {
+        "condition": "(device-type: tv)",
+        ".title": {
+          "fontSize": "16px"
+        },
+        ".detail_text": {
+          "fontSize": "12px"
+        }
+      }
+    ]
+  },
+  "actions": {
+    "routerEvent": {
+      "action": "router",
+      "bundleName": "com.example.crguide",
+      "abilityName": "com.example.crguide.MainAbility",
+      "params": {
+        "message": "add detail"
+      }
+    }
+  },
+  "data": {
+    "title": "Title",
+    "detail": "Text",
+    "iconTitle": "Picture"
+  },
+  "apiVersion": {}
+}
