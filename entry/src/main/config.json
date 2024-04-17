@@ -29,7 +29,7 @@
         ],
         "visible": true,
         "name": "com.example.crguide.MainAbility",
-        "icon": "$media:icon",
+        "icon": "$media:newicon",
         "description": "$string:mainability_description",
         "formsEnabled": true,
         "label": "$string:entry_MainAbility",

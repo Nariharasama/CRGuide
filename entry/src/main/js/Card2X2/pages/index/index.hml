@@ -8,6 +8,9 @@
                 <text class="station">终到</text><text class="station1">{{EndStation}}</text>
             </div>
         </div>
+        <div class="top-right">
+            <image src="/common/images/swap_vert.svg" class="icon"></image>
+        </div>
     </div>
     <div class="top">
         <div class="seatsindicator-a"></div>

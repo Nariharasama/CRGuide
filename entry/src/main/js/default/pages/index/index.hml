@@ -20,7 +20,7 @@
                 <image src="/common/images/swap_vert.svg" class="swapicon"/>
             </div>
         </div>
-        <button class="cardbutton" >添加服务卡片</button>
+        <button class="cardbutton" >设置并更新</button>
         <div class="divide-line"></div>
         <div class="page-title2"> 发车信息 </div>
         <div class="train-infos">
