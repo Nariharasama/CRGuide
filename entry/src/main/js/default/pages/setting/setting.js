@@ -27,5 +27,20 @@ export default {
                 this.toggle_list[i].checked = false;
             }
         }
+    },
+    ToHome(){
+        router.push({
+            uri: "pages/index/index"
+        })
+    },
+    ToInfo(){
+        router.push({
+            uri: "pages/info/info"
+        })
+    },
+    ToSetting(){
+        router.push({
+            uri: "pages/setting/setting"
+        })
     }
 }
