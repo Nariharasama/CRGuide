@@ -4,9 +4,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
 }
 
 .half{
@@ -43,8 +43,8 @@
 }
 
 .icon{
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
 }
 
 .half-left{
@@ -56,8 +56,8 @@
     text-color: #000000;
     text-align: left;
     font-family:sans-serif;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 12px;
+    line-height: 16px;
     font-weight: 400;
     display: flex;
     width: 30%;
@@ -68,8 +68,8 @@
     color: #4e5b92;
     text-align: left;
     font-family:sans-serif;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 12px;
+    line-height: 16px;
     font-weight: 400;
     display: flex;
     width: 50%;
@@ -77,22 +77,22 @@
 
 .seatsindicator-a{
     background-color: #2e7d32;
-    width: 8px;
-    height: 120px;
+    width: 4px;
+    height: 60px;
     flex-grow: 0;
 }
 
 .seatsindicator-b{
     background-color: #ef6c00;
-    width: 8px;
-    height: 120px;
+    width: 4px;
+    height: 60px;
     flex-grow: 0;
 }
 
 .seatsindicator-c{
     background-color: #d32f2f;
-    width: 8px;
-    height: 120px;
+    width: 4px;
+    height: 60px;
     flex-grow: 0;
 }
 
@@ -101,7 +101,7 @@
     flex-grow: 1;
     flex-direction: column;
     display: flex;
-    padding-left: 16px;
+    padding-left: 8px;
 }
 
 .half-right{
@@ -115,7 +115,7 @@
     color: #000000;
     text-align: left;
     font-family:sans-serif;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 400;
     display: flex;
     width: 50%;
@@ -126,7 +126,7 @@
     color: #535a92;
     text-align: center;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 400;
     height: 100%;
 }
@@ -135,9 +135,9 @@
     text-color: #000000;
     text-align: left;
     font-family:sans-serif;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 400;
-    margin-top: 8px;
+    margin-top: 4px;
     width:100%;
 
 }

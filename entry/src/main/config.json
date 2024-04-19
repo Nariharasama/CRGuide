@@ -109,7 +109,7 @@
         ],
         "window": {
           "designWidth": 720,
-          "autoDesignWidth": false
+          "autoDesignWidth": true
         },
         "type": "form"
       }

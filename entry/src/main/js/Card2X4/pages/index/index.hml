@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="top-right">
-                <image src="/common/images/swap_vert2x.svg" class="icon"></image>
+                <image src="/common/images/swap_vert.svg" class="icon"></image>
             </div>
         </div>
         <div class="top">
